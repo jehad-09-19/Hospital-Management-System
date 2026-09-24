@@ -1,35 +1,47 @@
 package model;
 
-public class Patient extends User {
-    private int age;
+public class Patient {
     private String gender;
-    private String bloodGroup;
-    private String diseaseHistory;
+    private int age;
+    private String address;
 
     public Patient() {
-        super();
-        this.role = User.PATIENT; //[cite: 3]
+
     }
 
-    public Patient(String userId, String password, String name, String email, 
-                   String contactNo, int age, String gender, String bloodGroup, String diseaseHistory) {
-        super(userId, password, name, email, contactNo, User.PATIENT); //[cite: 3]
-        this.age = age;
+    public Patient(String gender, int age, String address) {
         this.gender = gender;
-        this.bloodGroup = bloodGroup;
-        this.diseaseHistory = diseaseHistory;
+        this.age = age;
+        this.address = address;
     }
 
-    // Getters and Setters
-    public int getAge() { return age; }
-    public void setAge(int age) { this.age = age; }
+    public String getGender() {
+        return gender;
+    }
 
-    public String getGender() { return gender; }
-    public void setGender(String gender) { this.gender = gender; }
+    public int getAge() {
+        return age;
+    }
 
-    public String getBloodGroup() { return bloodGroup; }
-    public void setBloodGroup(String bloodGroup) { this.bloodGroup = bloodGroup; }
+    public String getAddress() {
+        return address;
+    }
 
-    public String getDiseaseHistory() { return diseaseHistory; }
-    public void setDiseaseHistory(String diseaseHistory) { this.diseaseHistory = diseaseHistory; }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void displayPatientInfo() {
+        System.out.println("Gender: " + gender);
+        System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
+    }
 }
