@@ -1,12 +1,9 @@
 import model.Nurse;
+
 public class Main {
-    public static void main(String[] args){
-        Nurse myNurse = new Nurse("Night","Emergency");
-        System.out.println(" Nurse Information");
-        myNurse.displayNurseInfo();
-        myNurse.setShift("Morning");
-        myNurse.setDepartment("ICU");
-        System.out.println(" \n Update Nurse Information");
-        myNurse.displayNurseInfo();
+    public static void main(String[] args) {
+        Nurse nurse = new Nurse("N-01", "pass123", "Fatema Begum", "fatema@gmail.com", "01712345678", "Morning", "Cardiology");
+        System.out.println("Nurse Details");
+        nurse.displayNurseInfo();
     }
 }
