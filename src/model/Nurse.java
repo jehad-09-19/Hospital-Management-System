@@ -1,14 +1,11 @@
 package model;
 
 public class Nurse {
-    //basic private field(Encapsulation)
     private  String shift;
     private  String department;
-    //default constructor
     public Nurse(){
 
     }
-    //parameterized constructor
     public Nurse(String shift,String department){
         this.shift = shift;
         this.department = department;
