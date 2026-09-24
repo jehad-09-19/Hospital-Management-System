@@ -1,14 +1,14 @@
-import view.PatientView;
-import controller.PatientController;
+import model.Patient;
 
 public class Main {
+
     public static void main(String[] args) {
-        initializeApp();
+        patientApp();
     }
 
-    private static void initializeApp() {
-        PatientView patientView = new PatientView();
-        PatientController patientController = new PatientController(patientView);
-        patientController.start();
+    public static void patientApp() {
+        System.out.println("\n--- Patient Details ---");
+        Patient patient = new Patient("Female", 24, "123 Main Street, Dhaka");
+        patient.displayPatientInfo();
     }
 }
