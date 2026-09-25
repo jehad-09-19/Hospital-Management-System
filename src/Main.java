@@ -1,22 +1,15 @@
-import model.User;
-import model.Patient;
-
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-
     public static void main(String[] args) {
-        patientFunc();
-    }
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
 
-    private static void patientFunc() {
-        System.out.println("=== PATIENT Info ===");
-
-        Patient patient = new Patient("P201", "patientPass123", "Jerin", "jerin@hospital.com", "01800000000", User.PATIENT, "24", "Female", "B+", "None");
-        
-        System.out.println("User ID    : " + patient.getUserId());
-        System.out.println("Name       : " + patient.getName());
-        System.out.println("Age        : " + patient.getAge());
-        System.out.println("Gender     : " + patient.getGender());
-        System.out.println("Blood Group: " + patient.getBloodGroup());
-        System.out.println("History    : " + patient.getDiseaseHistory());
+        for (int i = 1; i <= 5; i++) {
+            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
+            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+            System.out.println("i = " + i);
+        }
     }
 }
